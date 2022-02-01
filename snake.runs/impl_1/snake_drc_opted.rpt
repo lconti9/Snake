@@ -1,0 +1,46 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Dec  8 21:25:26 2021
+| Host         : LAPTOP-TB3NVNBB running 64-bit major release  (build 9200)
+| Command      : report_drc -file snake_drc_opted.rpt -pb snake_drc_opted.pb -rpx snake_drc_opted.rpx
+| Design       : snake
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++--------+----------+-----------------------+------------+
+| Rule   | Severity | Description           | Violations |
++--------+----------+-----------------------+------------+
+| IOSR-1 | Warning  | IOB set reset sharing | 1          |
++--------+----------+-----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+IOSR-1#1 Warning
+IOB set reset sharing  
+IO SW[0] connects to flops which have these head_inst/is_on100_out, head_inst/is_on102_out, head_inst/is_on103_out,
+head_inst/is_on104_out, head_inst/is_on106_out, head_inst/is_on107_out,
+head_inst/is_on108_out, head_inst/is_on109_out, head_inst/is_on10_out,
+head_inst/is_on110_out, head_inst/is_on111_out, head_inst/is_on112_out,
+head_inst/is_on115_out, head_inst/is_on116_out, head_inst/is_on117_out
+ (the first 15 of 123 listed) set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+

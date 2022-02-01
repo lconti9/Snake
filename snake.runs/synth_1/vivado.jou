@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec  8 21:24:00 2021
+# Process ID: 18044
+# Current directory: C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/synth_1
+# Command line: vivado.exe -log snake.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source snake.tcl
+# Log file: C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/synth_1/snake.vds
+# Journal file: C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source snake.tcl -notrace

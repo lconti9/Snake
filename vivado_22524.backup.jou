@@ -1,0 +1,308 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec  8 11:52:55 2021
+# Process ID: 22524
+# Current directory: C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11324 C:\Users\lcont\OneDrive - The University of Alabama\Documents\ECE 480\snake\snake.xpr
+# Log file: C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/vivado.log
+# Journal file: C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183B1694BA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183B1694BA]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {4.68750} CONFIG.MMCM_CLKFBOUT_MULT_F {6.000} CONFIG.MMCM_CLKIN1_PERIOD {10.0} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {128.000} CONFIG.CLKOUT1_JITTER {278.859} CONFIG.CLKOUT1_PHASE_ERROR {132.063}] [get_ips clk_wiz_0]
+generate_target all [get_files  {{C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files {{C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs clk_wiz_0_synth_1 -jobs 4
+wait_on_run clk_wiz_0_synth_1
+export_simulation -of_objects [get_files {{C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -directory {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.ip_user_files} -ipstatic_source_dir {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.cache/compile_simlib/modelsim} {questa=C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.cache/compile_simlib/questa} {riviera=C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.cache/compile_simlib/riviera} {activehdl=C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183B1694BA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183B1694BA]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {40} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKIN1_PERIOD {10.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {25.000} CONFIG.CLKOUT1_JITTER {159.371} CONFIG.CLKOUT1_PHASE_ERROR {98.575}] [get_ips clk_wiz_0]
+generate_target all [get_files  {{C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+catch { [ delete_ip_run [get_ips -all clk_wiz_0] ] }
+export_ip_user_files -of_objects [get_files {{C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+export_simulation -of_objects [get_files {{C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -directory {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.ip_user_files} -ipstatic_source_dir {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.cache/compile_simlib/modelsim} {questa=C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.cache/compile_simlib/questa} {riviera=C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.cache/compile_simlib/riviera} {activehdl=C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183B1694BA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183B1694BA]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+undo
+undo
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183B1694BA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183B1694BA]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+undo
+undo
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lcont/OneDrive - The University of Alabama/Documents/ECE 480/snake/snake.runs/impl_1/snake.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

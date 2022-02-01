@@ -1,0 +1,213 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Dec  8 21:25:41 2021
+| Host         : LAPTOP-TB3NVNBB running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file snake_control_sets_placed.rpt
+| Design       : snake
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   135 |
+|    Minimum number of control sets                        |   135 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   924 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   135 |
+| >= 0 to < 4        |   125 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             137 |           54 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              44 |           12 |
+| Yes          | No                    | No                     |            2552 |          994 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             143 |          134 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+-----------------------------------+---------------------------------+------------------+----------------+--------------+
+|        Clock Signal        |           Enable Signal           |         Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------+-----------------------------------+---------------------------------+------------------+----------------+--------------+
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on109_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on[38]_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on[36]_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on[42]_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on[32]_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on[87]_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on[50]_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on116_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on117_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on112_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on115_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on100_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on103_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on106_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on102_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on108_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on119_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on10_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on110_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on107_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on111_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on104_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on113_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on11_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on34_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on53_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on59_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on120_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on32_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on50_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on43_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on21_out           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG       |                                   |                                 |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on18_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on58_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on15_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on5_out            |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on16_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on22_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on13_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on54_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on118_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on56_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on3_out            |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on39_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on64_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on121_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on122_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on23_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on63_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on65_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on66_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on48_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on62_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on67_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on33_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on24_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on45_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on126_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on57_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on68_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on17_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on29_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on38_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on12_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on20_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on40_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on42_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on36_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on52_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on55_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on28_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on25_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on30_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on46_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on123_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on69_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on60_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on124_out          |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on27_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on44_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on14_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on19_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on4_out            |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on26_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on51_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on47_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on72_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on87_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on79_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on94_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on9_out            |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on[106]_i_1_n_0    |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on96_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on90_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on92_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on76_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on75_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on99_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on84_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on98_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on71_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on80_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on93_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on[115]_i_1_n_0    |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on74_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on77_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on78_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on91_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on89_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on73_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on[102]_i_1_n_0    |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on6_out            |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on70_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on81_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on97_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on85_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on8_out            |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on7_out            |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on88_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on95_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on82_out           |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on[84]_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | head_inst/p_0_in__0               | head_inst/is_on[62]_i_1_n_0     |                1 |              1 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | vga_sync_int/v_count0             | vga_sync_int/v_count[7]_i_1_n_0 |                2 |              2 |         1.00 |
+|  clk_40M_gen/inst/clk_out1 | vga_sync_int/v_count0             |                                 |                3 |              6 |         2.00 |
+|  clk_40M_gen/inst/clk_out1 |                                   | apple_inst/rand_y[9]_i_1_n_0    |                2 |              9 |         4.50 |
+|  CLK100MHZ_IBUF_BUFG       |                                   | apple_inst/clear                |                3 |              9 |         3.00 |
+|  clk_40M_gen/inst/clk_out1 | vga_sync_int/got_apple            | head_inst/p_0_in__0             |                9 |             18 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG       |                                   | counter_reg[0]_i_1_n_6          |                7 |             26 |         3.71 |
+|  clk_40M_gen/inst/clk_out1 |                                   |                                 |               17 |             37 |         2.18 |
+|  clk_40M_gen/inst/clk_out1 | vga_sync_int/pixel_row[9]_i_1_n_0 |                                 |               20 |             42 |         2.10 |
+|  clk_40M_gen/inst/clk_out1 | vga_sync_int/pixel_col[9]_i_1_n_0 |                                 |               21 |             44 |         2.10 |
+|  mv_clk_BUFG               |                                   |                                 |               36 |             99 |         2.75 |
+|  mv_clk_BUFG               | head_inst/p_1130_out              |                                 |              950 |           2460 |         2.59 |
++----------------------------+-----------------------------------+---------------------------------+------------------+----------------+--------------+
+
+
